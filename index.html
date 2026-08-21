@@ -1,291 +1,585 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>POSflow - The Future of Payments Online and Offline</title>
-<meta name="description" content="POSflow next-gen POS works online and offline using NFC and RFID.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POSflow — Offline &amp; Online Point of Sale Solution</title>
+  <meta name="description" content="POSflow is the leading Point of Sale solution featuring offline NFC & RFID tap payments. Never lose a sale during internet outages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav id="navbar">
-<div class="container"><div class="nav-inner">
-<a href="#" class="nav-logo">
-<div class="nav-logo-icon">
-<svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v3H2V6a2 2 0 0 1 2-2zm-2 7h20v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7zm4 3v2h4v-2H6zm6 0v2h2v-2h-2z"/></svg>
-</div>POSflow</a>
-<ul class="nav-links">
-<li><a href="#payments">Features</a></li>
-<li><a href="#how">How It Works</a></li>
-<li><a href="#integrations">Integrations</a></li>
-<li><a href="#testimonials">Testimonials</a></li>
-</ul>
-<div class="nav-actions">
-<a href="#" class="sign-in">Sign In</a>
-<a href="#cta" class="btn btn-primary">Get Started</a>
-</div>
-<button class="hamburger" id="hbg" onclick="toggleMenu()">
-<span></span><span></span><span></span>
-</button>
-</div></div>
-</nav>
-<div class="mobile-menu" id="mMenu">
-<ul>
-<li><a href="#payments" onclick="toggleMenu()">Features</a></li>
-<li><a href="#how" onclick="toggleMenu()">How It Works</a></li>
-<li><a href="#integrations" onclick="toggleMenu()">Integrations</a></li>
-<li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
-</ul>
-<div class="mmact">
-<a href="#" class="btn btn-outline">Sign In</a>
-<a href="#cta" class="btn btn-primary" onclick="toggleMenu()">Get Started</a>
-</div>
-</div>
-<section id="hero">
-<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-<div class="container"><div class="hero-grid">
-<div class="hero-left">
-<div class="fu" style="margin-bottom:20px"><span class="badge">Next-Gen Payments</span></div>
-<h1 class="hero-title fu d1">The Future of<br>Payments &mdash;<br><span class="grad">Online &amp; Offline</span></h1>
-<p class="hero-desc fu d2">Accept tapping, swiping, NFC and RFID payments even without an active internet connection. POSflow synchronizes safely once your connection is back.</p>
-<div class="hero-actions fu d3">
-<a href="#cta" class="btn btn-primary" id="hero-cta">
-<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-Get Free Demo</a>
-<div class="play-btn" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">
-<div class="play-ico"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#2563EB"/></svg></div>
-Watch How It Works</div>
-</div>
-<div class="hero-stats fu d4">
-<div><div class="hstat-n">99.9<span class="pc">%</span></div><div class="hstat-l">Uptime</div></div>
-<div><div class="hstat-n">0<span class="ms">ms</span></div><div class="hstat-l">Offline Delay</div></div>
-<div><div class="hstat-n">&lt;1<span class="ss">s</span></div><div class="hstat-l">Processing Time</div></div>
-</div>
-</div>
-<div class="hero-right fu d2">
-<div class="hero-img-wrap"><img src="hero-pos.jpg" alt="POSflow NFC POS Terminal"></div>
-<div class="hbf b1f">
-<div class="bico green"><svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-<div><div class="bt">Payment Accepted</div><div class="ld">Live Active</div></div>
-</div>
-<div class="hbf b2f">
-<div class="bico blue"><svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg></div>
-<div><div class="bt">NFC Detected</div><div style="font-size:.72rem;color:#64748B">RFID + NFC Ready</div></div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="logos">
-<div class="container">
-<p class="logos-label">Trusted by 5,000+ businesses worldwide</p>
-<div class="logos-strip">
-<div class="li">🛒 <span>RetailHub</span></div>
-<div class="li">🍕 <span>FoodChain Pro</span></div>
-<div class="li">🏪 <span>MegaMart</span></div>
-<div class="li">💊 <span>PharmaCare</span></div>
-<div class="li">☕ <span>CafeNet</span></div>
-<div class="li">🏨 <span>HotelSync</span></div>
-</div>
-</div>
-</section>
-<section id="payments" class="section">
-<div class="container">
-<div class="tc fu">
-<span class="badge">Dual Engine Technology</span>
-<h2 class="section-title" style="margin:16px auto 12px">Online + Offline Payments</h2>
-<p class="section-sub">Dual state engines guarantee you never lose a sale. Live tracking transitions smoothly when networks fluctuate.</p>
-</div>
-<div class="pay-grid">
-<div class="pay-card online fu d1">
-<div class="pc-hdr"><div class="pc-title">🌐 Online Mode</div><span class="sbadge slive">Live Active</span></div>
-<p class="pc-desc">Real-time tracking, cloud sync under 1s, and dynamic inventory telemetry. Every transaction is encrypted and logged instantly.</p>
-<div class="chart-area">
-<svg viewBox="0 0 300 80" preserveAspectRatio="none" style="width:100%;height:100%">
-<defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2563EB" stop-opacity="0.4"/><stop offset="100%" stop-color="#2563EB" stop-opacity="0"/></linearGradient></defs>
-<path d="M0,70 C30,60 60,30 90,40 C120,50 150,20 180,30 C210,40 240,10 270,20 L270,80 L0,80 Z" fill="url(#cg)" opacity="0.5"/>
-<path class="cline" d="M0,70 C30,60 60,30 90,40 C120,50 150,20 180,30 C210,40 240,10 270,20"/>
-<circle cx="270" cy="20" r="4" fill="#2563EB"/>
-<circle cx="270" cy="20" r="8" fill="rgba(37,99,235,.2)"><animate attributeName="r" values="4;12;4" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/></circle>
-</svg>
-</div>
-<div class="pf-list">
-<div class="pf"><div class="pfc ong">&#10003;</div>Real-time cloud synchronization</div>
-<div class="pf"><div class="pfc ong">&#10003;</div>Encrypted TLS payment processing</div>
-<div class="pf"><div class="pfc ong">&#10003;</div>Live inventory and sales analytics</div>
-</div>
-</div>
-<div class="pay-card offline fu d2">
-<div class="pc-hdr"><div class="pc-title">📡 Offline Mode</div><span class="sbadge slocal">Local Storage</span></div>
-<p class="pc-desc">Smart NFC/RFID validation queuing mechanism. All credentials securely hashed on local flash storage. No internet? No problem.</p>
-<div class="nfc-visual">
-<div class="nfc-rings">
-<div class="nr"></div><div class="nr"></div><div class="nr"></div>
-<div class="nc"><svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg></div>
-</div>
-</div>
-<div class="pf-list">
-<div class="pf"><div class="pfc off">&#10003;</div>NFC tap and RFID card acceptance</div>
-<div class="pf"><div class="pfc off">&#10003;</div>Encrypted local transaction queue</div>
-<div class="pf"><div class="pfc off">&#10003;</div>Auto-sync when connection restores</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="how" class="section">
-<div class="container"><div class="how-grid">
-<div>
-<span class="badge fu">Simple Process</span>
-<h2 class="section-title fu d1" style="margin:16px 0 12px">Simple Processing<br>Flow</h2>
-<p class="fu d2" style="color:#64748B;font-size:.95rem;margin-bottom:36px;line-height:1.7">Three seamless steps from customer tap to cloud sync.</p>
-<div class="steps">
-<div class="step fu d1"><div class="sn">1</div><div><h3>Customer Taps or Swipes</h3><p>Tap NFC device, insert chip, or swipe card. RFID badges and smart cards fully supported.</p></div></div>
-<div class="step fu d2"><div class="sn">2</div><div><h3>POS Processes and Stores</h3><p>Instant local validation keeps checkout moving even without connection. Transaction queued and encrypted.</p></div></div>
-<div class="step fu d3"><div class="sn">3</div><div><h3>Automatic Cloud Sync</h3><p>When network returns, batched offline items sync securely in background. Zero data loss.</p></div></div>
-</div>
-</div>
-<div class="how-vis fu d2">
-<div class="hv-img"><img src="nfc-offline.jpg" alt="NFC Offline Payment">
-<div class="hv-ov"></div>
-<div class="hv-txt"><h4>Always-On Payment Processing</h4><p>NFC + RFID ensures you never miss a sale</p></div>
-</div>
-<div class="sync-flt">
-<div class="sico"><svg width="18" height="18" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg></div>
-<div><div class="sl">Cloud Synced</div><div class="ss">247 transactions queued</div></div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="features" class="section" style="background:#fff">
-<div class="container">
-<div class="fhdr tc fu">
-<span class="badge">All Features</span>
-<h2 class="section-title" style="margin:16px auto 12px">Engineered for Scale</h2>
-<p class="section-sub">All the primitives you need to configure modern checkout systems for any business size.</p>
-</div>
-<div class="feat-grid">
-<div class="fc highlight fu">
-<div class="fi">📡</div>
-<h3>NFC + RFID Offline Payments</h3>
-<p>The only POS that processes contactless payments without internet. NFC tap, RFID card, chip insert all work offline with end-to-end encryption stored locally.</p>
-<div class="chips"><span>NFC Tap</span><span>RFID Cards</span><span>Chip and PIN</span><span>Mag Swipe</span><span>QR Code</span></div>
-</div>
-<div class="fc fu d1"><div class="fi ic-blue">📦</div><h3>Inventory Tracking</h3><p>Update catalog listings with dynamic counts on sync states. Real-time stock management across all locations.</p></div>
-<div class="fc fu d2"><div class="fi ic-green">🔒</div><h3>End-to-End Security</h3><p>Hashed transactions compliant with modern cryptographic standards. PCI-DSS certified processing pipeline.</p></div>
-<div class="fc fu d1"><div class="fi ic-purple">👥</div><h3>Multi-user Support</h3><p>Separate authorization tiers for staff, managers, and accounting. Role-based access with audit logs.</p></div>
-<div class="fc fu d2"><div class="fi ic-orange">⚡</div><h3>Data Automation</h3><p>Export sales reports to Quickbooks, Xero, or custom CSV. Schedule automated reports daily or weekly.</p></div>
-<div class="fc fu d1"><div class="fi ic-teal">📞</div><h3>24/7 Support</h3><p>Dedicated direct routing support for business continuity. Live chat, phone, and email support included.</p></div>
-<div class="fc fu d2"><div class="fi ic-indigo">📊</div><h3>Trending Analytics</h3><p>Track visual metrics of sales curves across locations. Identify peak hours and best-selling products.</p></div>
-<div class="fc fu d1"><div class="fi ic-red">🔌</div><h3>API Integrations</h3><p>Robust developer webhook architectures for offline setups. REST APIs with full documentation and SDKs.</p></div>
-<div class="fc fu d2"><div class="fi ic-yellow">💾</div><h3>Offline Cache</h3><p>Decentralized local cache adoption avoids queue drops. Smart storage management with compression.</p></div>
-</div>
-</div>
-</section>
-<section id="stats">
-<div class="container"><div class="stats-grid">
-<div class="si fu"><span class="sn" data-target="99.9" data-suffix="%">0%</span><div class="sl2">Guaranteed Uptime</div><div class="ss2">Robust offline redundancy protects your checkouts constantly</div></div>
-<div class="si fu d1"><span class="sn" data-target="0" data-suffix="">0</span><div class="sl2">Transaction Failures</div><div class="ss2">Decentralized local cache adoption avoids all queue drops</div></div>
-<div class="si fu d2"><span class="sn" data-target="1" data-prefix="&lt;" data-suffix="s">&lt;1s</span><div class="sl2">Processing Time</div><div class="ss2">Hardware-optimized pipeline resolves checkouts instantly</div></div>
-</div></div>
-</section>
-<section id="integrations" class="section">
-<div class="container"><div class="int-grid">
-<div class="fu">
-<span class="badge">Payment Gateway</span>
-<h2 class="section-title" style="margin:16px 0 12px">Payment Integration<br>Already Live</h2>
-<p style="color:#64748B;font-size:.95rem;line-height:1.7;margin-bottom:32px">Our backend payment infrastructure is fully implemented. Connect to all major payment processors with zero configuration needed.</p>
-<div class="int-list">
-<div class="ifl"><div class="ic2"><svg width="12" height="12" stroke="white" stroke-width="2.5" fill="none" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>Stripe, PayPal and Square</h4><p>One-click connection to all major payment gateways. No extra fees or setup charges required.</p></div></div>
-<div class="ifl"><div class="ic2"><svg width="12" height="12" stroke="white" stroke-width="2.5" fill="none" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>Bank Direct Transfer EFT</h4><p>ACH and SEPA bank transfers for high-value B2B transactions with same-day settlement.</p></div></div>
-<div class="ifl"><div class="ic2"><svg width="12" height="12" stroke="white" stroke-width="2.5" fill="none" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>Crypto and Digital Wallets</h4><p>Accept Bitcoin, USDT, Apple Pay, Google Pay, and regional digital wallets out of the box.</p></div></div>
-</div>
-</div>
-<div class="fu d2"><div class="int-logos">
-<div class="il"><span class="le">💳</span><span>Stripe</span></div>
-<div class="il"><span class="le">🅿️</span><span>PayPal</span></div>
-<div class="il"><span class="le">⬛</span><span>Square</span></div>
-<div class="il"><span class="le">🍎</span><span>Apple Pay</span></div>
-<div class="il"><span class="le">🔍</span><span>Google Pay</span></div>
-<div class="il"><span class="le">₿</span><span>Crypto</span></div>
-</div></div>
-</div></div>
-</section>
-<section id="industries" class="section" style="background:#fff">
-<div class="container">
-<div class="tc fu"><span class="badge">Industries</span><h2 class="section-title" style="margin:16px auto 12px">Works for Every Business</h2><p class="section-sub">From retail to restaurants, POSflow adapts to your industry with custom workflows.</p></div>
-<div class="ind-grid">
-<div class="ind-card fu d1"><span class="ie">🛒</span><h3>Retail Stores</h3><p>High-volume checkout with real-time inventory sync and barcode scanning.</p></div>
-<div class="ind-card fu d2"><span class="ie">🍕</span><h3>Restaurants and Cafes</h3><p>Table ordering, split bills, kitchen display and tipping support built-in.</p></div>
-<div class="ind-card fu d3"><span class="ie">💊</span><h3>Pharmacies</h3><p>Prescription tracking, insurance billing and controlled item compliance.</p></div>
-<div class="ind-card fu d4"><span class="ie">🏨</span><h3>Hotels and Hospitality</h3><p>Room charges, minibar billing and event invoicing from a single terminal.</p></div>
-<div class="ind-card fu d1"><span class="ie">🏋️</span><h3>Gyms and Events</h3><p>Membership cards, RFID wristbands and ticketing with access control.</p></div>
-<div class="ind-card fu d2"><span class="ie">🚌</span><h3>Transport and Parking</h3><p>Offline fare collection with NFC cards, receipts and daily reconciliation.</p></div>
-<div class="ind-card fu d3"><span class="ie">🎪</span><h3>Pop-ups and Markets</h3><p>No WiFi? No problem. Full offline mode for outdoor events and markets.</p></div>
-<div class="ind-card fu d4"><span class="ie">🏫</span><h3>Schools and Canteens</h3><p>Student RFID card payments, daily meal tracking and parent reporting.</p></div>
-</div>
-</div>
-</section>
-<section id="testimonials" class="section">
-<div class="container">
-<div class="tc fu"><span class="badge">Testimonials</span><h2 class="section-title" style="margin:16px auto 12px">Loved by Businesses</h2><p class="section-sub">See what customers say about POSflow's game-changing offline payment capability.</p></div>
-<div class="test-grid">
-<div class="tc-card fu d1">
-<div class="tstars">★★★★★</div>
-<p class="tt">"We run a busy outdoor market every weekend. Before POSflow, losing internet meant losing sales. Now our NFC terminal works flawlessly offline and syncs everything later. Game changer."</p>
-<div class="ta"><div class="tav" style="background:linear-gradient(135deg,#2563EB,#6366F1)">A</div><div><div class="tn">Ahmad Hassan</div><div class="tr">Owner, FreshMarket Karachi</div></div></div>
-</div>
-<div class="tc-card fu d2">
-<div class="tstars">★★★★★</div>
-<p class="tt">"Our hotel handles 500+ daily transactions. The RFID room key integration with billing is incredibly smooth. POSflow reduced checkout time by 60% and eliminated manual billing errors."</p>
-<div class="ta"><div class="tav" style="background:linear-gradient(135deg,#10B981,#059669)">S</div><div><div class="tn">Sara Malik</div><div class="tr">GM, Grand Continental Hotel</div></div></div>
-</div>
-<div class="tc-card fu d3">
-<div class="tstars">★★★★★</div>
-<p class="tt">"Payment integration was already done when we onboarded. We connected Stripe and our bank in 5 minutes. The offline NFC mode saved us at a major event when WiFi went down completely."</p>
-<div class="ta"><div class="tav" style="background:linear-gradient(135deg,#8B5CF6,#6366F1)">R</div><div><div class="tn">Raza Qureshi</div><div class="tr">CTO, EventZone Pakistan</div></div></div>
-</div>
-</div>
-</div>
-</section>
-<section id="cta">
-<div class="blob cb1"></div><div class="blob cb2"></div>
-<div class="container"><div class="cta-inner">
-<span class="badge cta-badge" style="margin-bottom:20px">Ready to Modernize?</span>
-<h2 class="cta-title">Ready to modernize<br>your payments?</h2>
-<p class="cta-desc">Get a tailored configuration setup for your store or network.<br>Start accepting offline taps today.</p>
-<form class="cta-form" onsubmit="handleSubmit(event)">
-<input type="email" id="cta-email" placeholder="Enter your email address" required>
-<button type="submit" class="btn btn-primary" id="book-btn">Book Demo</button>
-</form>
-<div class="cta-g">
-<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-No credit card required. 14-day free trial. Cancel anytime.
-</div>
-</div></div>
-</section>
-<footer id="footer">
-<div class="container">
-<div class="ft-grid">
-<div class="ft-brand">
-<div class="nav-logo" style="color:#fff;margin-bottom:14px">
-<div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v3H2V6a2 2 0 0 1 2-2zm-2 7h20v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7zm4 3v2h4v-2H6zm6 0v2h2v-2h-2z"/></svg></div>
-POSflow</div>
-<p>The next-gen POS system that works online and offline. Accept NFC, RFID, and all payment types everywhere.</p>
-</div>
-<div class="ft-col"><h4>Product</h4><ul><li><a href="#">Features</a></li><li><a href="#">Integrations</a></li><li><a href="#">Pricing</a></li><li><a href="#">Changelog</a></li></ul></div>
-<div class="ft-col"><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul></div>
-<div class="ft-col"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Security</a></li><li><a href="#">Compliance</a></li></ul></div>
-</div>
-<div class="ft-btm">
-<span>© 2026 POSflow Inc. All rights reserved.</span>
-<div class="ft-soc">
-<div class="sb">𝕏</div><div class="sb">in</div><div class="sb">📷</div><div class="sb">⌥</div>
-</div>
-</div>
-</div>
-</footer>
-<script src="app.js"></script>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v3H2V6a2 2 0 0 1 2-2zm-2 7h20v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7zm4 3v2h4v-2H6zm6 0v2h2v-2h-2z"/></svg>
+          </div>
+          POSflow
+        </a>
+        <ul class="nav-links">
+          <li><a href="#demo-preview">Software Preview</a></li>
+          <li><a href="#comparison">Why POSflow</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#pricing" class="sign-in">Sign In</a>
+          <a href="#cta" class="btn btn-primary">Get Started Free</a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mMenu">
+    <ul>
+      <li><a href="#demo-preview" onclick="toggleMenu()">Software Preview</a></li>
+      <li><a href="#comparison" onclick="toggleMenu()">Why POSflow</a></li>
+      <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+      <li><a href="#pricing" onclick="toggleMenu()">Pricing</a></li>
+      <li><a href="#testimonials" onclick="toggleMenu()">Reviews</a></li>
+    </ul>
+    <div class="mmact">
+      <a href="#cta" class="btn btn-primary" onclick="toggleMenu()">Get Started Free</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="fu" style="margin-bottom:16px">
+            <span class="badge">📡 Offline + Online Payment POS</span>
+          </div>
+          <h1 class="hero-title fu d1">
+            Keep Selling Even When <br/><span class="grad">The Internet Goes Down</span>
+          </h1>
+          <p class="hero-desc fu d2">
+            The next-generation POS solution built for store owners. Accept instant NFC tap and RFID payments offline, manage inventory automatically, and sync to the cloud the moment WiFi returns.
+          </p>
+          <div class="hero-actions fu d3">
+            <a href="#cta" class="btn btn-primary">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Start 14-Day Free Trial
+            </a>
+            <div class="play-btn" onclick="document.getElementById('demo-preview').scrollIntoView({behavior:'smooth'})">
+              <div class="play-ico"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#2563EB"/></svg></div>
+              See Live POS Screen
+            </div>
+          </div>
+          <div class="hero-guarantee fu d4">
+            <span>⚡ 15-Minute Setup</span> • <span>🔒 No Hardware Lock-in</span> • <span>💳 No Credit Card Needed</span>
+          </div>
+          <div class="hero-stats fu d4">
+            <div><div class="hstat-n">99.9<span class="pc">%</span></div><div class="hstat-l">Guaranteed Uptime</div></div>
+            <div><div class="hstat-n">0<span class="ms">ms</span></div><div class="hstat-l">Offline Transaction Delay</div></div>
+            <div><div class="hstat-n">&lt;1<span class="ss">s</span></div><div class="hstat-l">Cloud Sync Speed</div></div>
+          </div>
+        </div>
+        
+        <div class="hero-right fu d2">
+          <div class="hero-img-wrap">
+            <img src="hero-pos.jpg" alt="POSflow POS Terminal Hardware" />
+          </div>
+          <div class="hbf b1f">
+            <div class="bico green">
+              <svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <div class="bt">Offline Tap Approved</div>
+              <div class="ld">NFC + RFID Active</div>
+            </div>
+          </div>
+          <div class="hbf b2f">
+            <div class="bico blue">
+              <svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+            </div>
+            <div>
+              <div class="bt">Auto Cloud Sync</div>
+              <div style="font-size:.72rem;color:#64748B">Zero Data Loss Guarantee</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS STRIP -->
+  <section id="logos">
+    <div class="container">
+      <p class="logos-label">Powering 5,000+ retail stores, cafes, and outdoor markets</p>
+      <div class="logos-strip">
+        <div class="li">🛒 <span>RetailHub Stores</span></div>
+        <div class="li">🍕 <span>FoodChain Pro</span></div>
+        <div class="li">🏪 <span>MegaMart Express</span></div>
+        <div class="li">💊 <span>PharmaCare Express</span></div>
+        <div class="li">☕ <span>Artisan Cafe</span></div>
+        <div class="li">🏨 <span>Grand Plaza Hotel</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SOFTWARE MOCKUP PREVIEW -->
+  <section id="demo-preview" class="section">
+    <div class="container">
+      <div class="tc fu">
+        <span class="badge">Live Interface Preview</span>
+        <h2 class="section-title" style="margin:16px auto 12px">Simple, Fast &amp; Intuitive POS Screen</h2>
+        <p class="section-sub">Experience what your cashiers and store managers will use every day. Designed for speed, minimal clicks, and zero training required.</p>
+      </div>
+
+      <div class="ui-mockup-wrapper fu d1">
+        <!-- Mockup Tab Switchers -->
+        <div class="ui-tabs">
+          <button class="ui-tab active" onclick="switchMockupTab('checkout', this)">🛒 Cashier Checkout</button>
+          <button class="ui-tab" onclick="switchMockupTab('offline-sync', this)">📡 Offline Queue Sync</button>
+          <button class="ui-tab" onclick="switchMockupTab('analytics', this)">📊 Sales &amp; Inventory</button>
+        </div>
+
+        <!-- Window Mockup Frame -->
+        <div class="window-frame">
+          <div class="window-header">
+            <div class="window-dots">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </div>
+            <div class="window-title">POSflow Register — Terminal #01 (Station Active)</div>
+            <div class="window-status"><span class="badge-status-online" id="mockupStatusDot">● Online Mode</span></div>
+          </div>
+          
+          <div class="window-body">
+            <!-- TAB 1: CASHIER CHECKOUT -->
+            <div class="tab-content active" id="tab-checkout">
+              <div class="pos-screen-layout">
+                <div class="pos-items-grid">
+                  <div class="pos-item-card">
+                    <div class="item-img">☕</div>
+                    <div class="item-name">Espresso Coffee</div>
+                    <div class="item-price">.50</div>
+                  </div>
+                  <div class="pos-item-card">
+                    <div class="item-img">🥐</div>
+                    <div class="item-name">Butter Croissant</div>
+                    <div class="item-price">.80</div>
+                  </div>
+                  <div class="pos-item-card">
+                    <div class="item-img">🥪</div>
+                    <div class="item-name">Club Sandwich</div>
+                    <div class="item-price">.99</div>
+                  </div>
+                  <div class="pos-item-card">
+                    <div class="item-img">🥤</div>
+                    <div class="item-name">Iced Cold Brew</div>
+                    <div class="item-price">.20</div>
+                  </div>
+                  <div class="pos-item-card">
+                    <div class="item-img">🥗</div>
+                    <div class="item-name">Greek Caesar Salad</div>
+                    <div class="item-price">.50</div>
+                  </div>
+                  <div class="pos-item-card">
+                    <div class="item-img">🍰</div>
+                    <div class="item-name">Cheesecake Slice</div>
+                    <div class="item-price">.00</div>
+                  </div>
+                </div>
+                
+                <div class="pos-cart-sidebar">
+                  <div class="cart-header">Current Order #1042</div>
+                  <div class="cart-list">
+                    <div class="cart-row"><span>2x Espresso Coffee</span><strong>.00</strong></div>
+                    <div class="cart-row"><span>1x Butter Croissant</span><strong>.80</strong></div>
+                    <div class="cart-row"><span>1x Iced Cold Brew</span><strong>.20</strong></div>
+                  </div>
+                  <div class="cart-summary">
+                    <div class="summary-line"><span>Subtotal:</span><span>.00</span></div>
+                    <div class="summary-line"><span>Tax (8%):</span><span>.44</span></div>
+                    <div class="summary-total"><span>Total:</span><strong>.44</strong></div>
+                  </div>
+                  <div class="payment-action-box">
+                    <div class="nfc-tap-prompt">
+                      <span class="nfc-icon">📡</span>
+                      <span>Tap NFC Device / RFID Card or Insert</span>
+                    </div>
+                    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:10px" onclick="triggerCheckoutSim()">
+                      Charge .44 (Instant Tap)
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 2: OFFLINE QUEUE SYNC -->
+            <div class="tab-content" id="tab-offline-sync">
+              <div class="offline-sync-view">
+                <div class="sync-banner">
+                  <div class="sync-banner-title">📡 Network Offline Engine Active</div>
+                  <p>WiFi connection lost at 14:22 PM. All 18 local transactions are securely encrypted and cached in hardware storage. Normal sales operations continue without delay.</p>
+                </div>
+                <table class="sync-table">
+                  <thead>
+                    <tr><th>Tx ID</th><th>Time</th><th>Method</th><th>Amount</th><th>Local Security Status</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>#TX-8821</td><td>14:23 PM</td><td>NFC Tap (Phone)</td><td>.50</td><td><span class="tag-encrypted">Encrypted &amp; Queued</span></td></tr>
+                    <tr><td>#TX-8822</td><td>14:25 PM</td><td>RFID Badge #042</td><td>.00</td><td><span class="tag-encrypted">Encrypted &amp; Queued</span></td></tr>
+                    <tr><td>#TX-8823</td><td>14:28 PM</td><td>Chip &amp; PIN Insert</td><td>.90</td><td><span class="tag-encrypted">Encrypted &amp; Queued</span></td></tr>
+                    <tr><td>#TX-8824</td><td>14:31 PM</td><td>NFC Smart Watch</td><td>.50</td><td><span class="tag-encrypted">Encrypted &amp; Queued</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- TAB 3: ANALYTICS -->
+            <div class="tab-content" id="tab-analytics">
+              <div class="analytics-view">
+                <div class="analytics-cards">
+                  <div class="acard"><span>Today's Total Revenue</span><strong>,289.50</strong><small>+18.4% vs yesterday</small></div>
+                  <div class="acard"><span>Total Transactions</span><strong>342 Sales</strong><small>Avg .54 / ticket</small></div>
+                  <div class="acard"><span>Offline Tap Ratio</span><strong>42.5% NFC</strong><small>Zero failed checkouts</small></div>
+                </div>
+                <div class="analytics-chart-box">
+                  <div class="chart-header">Real-Time Hourly Sales Curve</div>
+                  <div class="fake-bar-chart">
+                    <div class="bar" style="height:35%" title="9 AM: "></div>
+                    <div class="bar" style="height:55%" title="10 AM: "></div>
+                    <div class="bar" style="height:85%" title="11 AM: "></div>
+                    <div class="bar" style="height:100%" title="12 PM: ,240"></div>
+                    <div class="bar" style="height:70%" title="1 PM: "></div>
+                    <div class="bar" style="height:60%" title="2 PM: "></div>
+                    <div class="bar" style="height:90%" title="3 PM: "></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US / COMPARISON TABLE -->
+  <section id="comparison" class="section" style="background:#fff">
+    <div class="container">
+      <div class="tc fu">
+        <span class="badge">Competitive Advantage</span>
+        <h2 class="section-title" style="margin:16px auto 12px">Why Choose POSflow Over Standard POS Systems?</h2>
+        <p class="section-subtitle">Traditional cloud POS software freezes up when your store's internet drops. POSflow is built with dual state engines to keep checkout moving non-stop.</p>
+      </div>
+
+      <div class="comparison-table-wrap fu d1">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature / Metric</th>
+              <th class="col-posflow">⚡ POSflow Solution</th>
+              <th class="col-legacy">❌ Legacy / Standard POS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Internet Outage Handling</strong></td>
+              <td class="col-posflow">✅ 100% Offline Mode — Accepts NFC Taps &amp; RFID</td>
+              <td class="col-legacy">❌ Freezes or denies credit/debit card transactions</td>
+            </tr>
+            <tr>
+              <td><strong>Checkout Processing Speed</strong></td>
+              <td class="col-posflow">⚡ Under 1 Second per transaction</td>
+              <td class="col-legacy">⚠️ 4-8 Seconds (Network dependent)</td>
+            </tr>
+            <tr>
+              <td><strong>Hardware Commitment</strong></td>
+              <td class="col-posflow">✅ Use any Android, Tablet, PC, or standard terminal</td>
+              <td class="col-legacy">❌ Expensive proprietary hardware lock-in</td>
+            </tr>
+            <tr>
+              <td><strong>Data Sync &amp; Backup</strong></td>
+              <td class="col-posflow">✅ Auto-syncs in background when WiFi resumes</td>
+              <td class="col-legacy">⚠️ Manual reconciliation required after crash</td>
+            </tr>
+            <tr>
+              <td><strong>Accounting Software Integration</strong></td>
+              <td class="col-posflow">✅ 1-Click QuickBooks, Xero &amp; CSV Exports</td>
+              <td class="col-legacy">❌ Manual entry or paid extra plugins</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION (TABBED & SIMPLIFIED) -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="tc fu">
+        <span class="badge">Powerful Business Primitives</span>
+        <h2 class="section-title" style="margin:16px auto 12px">Engineered to Run Your Entire Business</h2>
+        <p class="section-sub">Everything you need to accept payments, track stock across stores, and keep staff accountable.</p>
+      </div>
+
+      <div class="feat-tabs-nav fu d1">
+        <button class="ft-btn active" onclick="switchFeatureGroup('core', this)">📡 Payment Engine</button>
+        <button class="ft-btn" onclick="switchFeatureGroup('operations', this)">📦 Store Operations</button>
+        <button class="ft-btn" onclick="switchFeatureGroup('integrations', this)">🔌 Accounting &amp; Reporting</button>
+      </div>
+
+      <div class="feat-tab-content active" id="fg-core">
+        <div class="feat-grid-new">
+          <div class="fcard-new hero-feat">
+            <div class="ficon-new">📡</div>
+            <h3>NFC + RFID Offline Tap Acceptance</h3>
+            <p>Our flagship technology. Customers can tap their smartphones (Apple Pay/Google Pay) or RFID cards even when your shop has zero internet connection. Transactions encrypt instantly to hardware storage.</p>
+          </div>
+          <div class="fcard-new">
+            <div class="ficon-new">⚡</div>
+            <h3>Instant Payment Gateway Connection</h3>
+            <p>Already connected to Stripe, PayPal, Square, and direct bank transfers. No complicated gateway setup or hidden transaction markups.</p>
+          </div>
+          <div class="fcard-new">
+            <div class="ficon-new">🔒</div>
+            <h3>Bank-Grade Security</h3>
+            <p>PCI-DSS compliant hashed transactions protect your customer data locally and during cloud sync.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feat-tab-content" id="fg-operations">
+        <div class="feat-grid-new">
+          <div class="fcard-new">
+            <div class="ficon-new">📦</div>
+            <h3>Real-Time Inventory Tracking</h3>
+            <p>Automatically deduct stock upon checkout. Get low-stock alerts before you run out of bestsellers.</p>
+          </div>
+          <div class="fcard-new">
+            <div class="ficon-new">👥</div>
+            <h3>Staff Tiers &amp; Role Permissions</h3>
+            <p>Set up separate access logins for cashiers, managers, and accountants. Prevent unauthorized discounts.</p>
+          </div>
+          <div class="fcard-new">
+            <div class="ficon-new">🏪</div>
+            <h3>Multi-Store Management</h3>
+            <p>Control multiple register locations or pop-up stores from a single unified online dashboard.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feat-tab-content" id="fg-integrations">
+        <div class="feat-grid-new">
+          <div class="fcard-new">
+            <div class="ficon-new">📊</div>
+            <h3>1-Click QuickBooks &amp; Xero Sync</h3>
+            <p>Eliminate manual end-of-day bookkeeping. Export daily sales reports to your favorite accounting software instantly.</p>
+          </div>
+          <div class="fcard-new">
+            <div class="ficon-new">📑</div>
+            <h3>Custom CSV &amp; Tax Exports</h3>
+            <p>Generate detailed audit-ready sales summaries, tax reports, and hourly revenue curves with one click.</p>
+          </div>
+          <div class="fcard-new">
+            <div class="ficon-new">📞</div>
+            <h3>24/7 Priority Business Support</h3>
+            <p>Direct phone and live chat support for uninterrupted store operations during peak holiday rush hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="section" style="background:#fff">
+    <div class="container">
+      <div class="tc fu">
+        <span class="badge">Simple &amp; Transparent Pricing</span>
+        <h2 class="section-title" style="margin:16px auto 12px">Simple Plans. No Surprise Fees.</h2>
+        <p class="section-subtitle">Start with a 14-day free trial. Upgrade or cancel anytime with zero lock-in contracts.</p>
+      </div>
+
+      <div class="pricing-grid fu d1">
+        <div class="pricing-card">
+          <div class="p-header">
+            <h3>Starter Register</h3>
+            <p>Ideal for pop-up shops, single kiosks &amp; small cafes.</p>
+            <div class="p-price"><strong></strong><span>/ month</span></div>
+          </div>
+          <ul class="p-list">
+            <li>✓ 1 Register Terminal</li>
+            <li>✓ Full Offline NFC &amp; RFID Engine</li>
+            <li>✓ Up to 1,000 Monthly Transactions</li>
+            <li>✓ Real-Time Stock Tracking</li>
+            <li>✓ Standard Email Support</li>
+          </ul>
+          <a href="#cta" class="btn btn-outline" style="width:100%;justify-content:center">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="p-header">
+            <h3>Pro Business</h3>
+            <p>Designed for busy retail stores &amp; high-volume venues.</p>
+            <div class="p-price"><strong></strong><span>/ month</span></div>
+          </div>
+          <ul class="p-list">
+            <li>✓ Up to 5 Register Terminals</li>
+            <li>✓ Unlimited Offline Tap Processing</li>
+            <li>✓ Unlimited Monthly Transactions</li>
+            <li>✓ QuickBooks &amp; Xero 1-Click Sync</li>
+            <li>✓ Multi-Staff Permissions &amp; Audit Logs</li>
+            <li>✓ 24/7 Direct Phone &amp; Chat Support</li>
+          </ul>
+          <a href="#cta" class="btn btn-primary" style="width:100%;justify-content:center">Get Started Free</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="p-header">
+            <h3>Enterprise Network</h3>
+            <p>For multi-location chains, supermarket networks &amp; stadiums.</p>
+            <div class="p-price"><strong>Custom</strong></div>
+          </div>
+          <ul class="p-list">
+            <li>✓ Unlimited Terminals &amp; Stores</li>
+            <li>✓ Custom Webhook &amp; ERP Integration</li>
+            <li>✓ Dedicated Account Manager</li>
+            <li>✓ Customized Hardware Setup</li>
+            <li>✓ 99.99% SLA Guarantee</li>
+          </ul>
+          <a href="#cta" class="btn btn-outline" style="width:100%;justify-content:center">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS & REVIEWS -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="tc fu">
+        <span class="badge">Verified Store Owner Reviews</span>
+        <h2 class="section-title" style="margin:16px auto 12px">Trusted by Store Managers Everywhere</h2>
+        <p class="section-sub">Here is how POSflow saved revenue during festival season and daily store operations.</p>
+      </div>
+
+      <div class="test-grid">
+        <div class="tc-card fu d1">
+          <div class="tstars">★★★★★</div>
+          <p class="tt">"We run an outdoor farmer's market every weekend where mobile data is terrible. Before POSflow, internet drops meant lost sales. Now customers tap their phones offline and everything syncs later. Game changer for our business!"</p>
+          <div class="ta">
+            <div class="tav" style="background:linear-gradient(135deg,#2563EB,#6366F1)">A</div>
+            <div>
+              <div class="tn">Ahmad Hassan</div>
+              <div class="tr">Owner, FreshMarket Retail</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tc-card fu d2">
+          <div class="tstars">★★★★★</div>
+          <p class="tt">"The 1-click QuickBooks accounting sync saves my staff 2 hours every evening. Plus, setting it up took less than 15 minutes on our existing tablets without buying proprietary hardware."</p>
+          <div class="ta">
+            <div class="tav" style="background:linear-gradient(135deg,#10B981,#059669)">S</div>
+            <div>
+              <div class="tn">Sara Malik</div>
+              <div class="tr">General Manager, Artisan Cafe &amp; Bakery</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tc-card fu d3">
+          <div class="tstars">★★★★★</div>
+          <p class="tt">"Backend payment gateways were ready from minute one. We connected Stripe and accepted NFC tap payments on day one. Zero transaction delays or queue backups."</p>
+          <div class="ta">
+            <div class="tav" style="background:linear-gradient(135deg,#8B5CF6,#6366F1)">R</div>
+            <div>
+              <div class="tn">Raza Qureshi</div>
+              <div class="tr">Operations Director, EventZone Outlets</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section id="cta">
+    <div class="blob cb1"></div><div class="blob cb2"></div>
+    <div class="container">
+      <div class="cta-inner">
+        <span class="badge cta-badge" style="margin-bottom:20px">Start Accepting Offline Taps Today</span>
+        <h2 class="cta-title">Ready to Modernize Your Checkout?</h2>
+        <p class="cta-desc">Get your store configured in 15 minutes. Start accepting offline NFC taps and seamless online payments immediately.</p>
+        
+        <form class="cta-form" onsubmit="handleSubmit(event)">
+          <input type="email" id="cta-email" placeholder="Enter your business email" required />
+          <button type="submit" class="btn btn-primary" id="book-btn">Get Free Demo</button>
+        </form>
+        
+        <div class="cta-g">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          14-Day Free Trial • No Credit Card Required • No Hardware Lock-in
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="ft-grid">
+        <div class="ft-brand">
+          <div class="nav-logo" style="color:#fff;margin-bottom:14px">
+            <div class="nav-logo-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v3H2V6a2 2 0 0 1 2-2zm-2 7h20v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7zm4 3v2h4v-2H6zm6 0v2h2v-2h-2z"/></svg>
+            </div>
+            POSflow
+          </div>
+          <p>The Point of Sale solution built for reliability. Accept NFC taps and RFID transactions online or offline, anywhere.</p>
+        </div>
+        <div class="ft-col">
+          <h4>Solution</h4>
+          <ul>
+            <li><a href="#demo-preview">Software Preview</a></li>
+            <li><a href="#comparison">POSflow vs Competitors</a></li>
+            <li><a href="#features">Offline NFC Technology</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Integrations</h4>
+          <ul>
+            <li><a href="#">Stripe &amp; PayPal</a></li>
+            <li><a href="#">QuickBooks Sync</a></li>
+            <li><a href="#">Xero Accounting</a></li>
+            <li><a href="#">EFT Bank Transfers</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About POSflow</a></li>
+            <li><a href="#">Security &amp; Compliance</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Support Center</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-btm">
+        <span>© 2026 POSflow Inc. All rights reserved.</span>
+        <div class="ft-soc">
+          <div class="sb">𝕏</div><div class="sb">in</div><div class="sb">📷</div><div class="sb">⌥</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
