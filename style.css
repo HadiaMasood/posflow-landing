@@ -108,8 +108,8 @@ a{text-decoration:none;color:inherit}
 .comparison-table tbody tr:hover{background:rgba(248,250,255,.8)}
 
 /* FEATURE TABS & CARDS */
-.feat-tabs-nav{display:flex;justify-content:center;gap:8px;margin:24px 0 32px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
-.ft-btn{padding:10px 20px;border-radius:12px;border:1.5px solid var(--border);background:#fff;font-weight:700;font-size:.85rem;color:var(--text2);cursor:pointer;transition:all .3s;white-space:nowrap;flex-shrink:0}
+.feat-tabs-nav{display:flex;justify-content:center;align-items:center;gap:10px;margin:28px 0 36px;flex-wrap:wrap}
+.ft-btn{padding:12px 24px;border-radius:12px;border:1.5px solid var(--border);background:#fff;font-weight:700;font-size:.9rem;color:var(--text2);cursor:pointer;transition:all .3s;white-space:nowrap}
 .ft-btn.active,.ft-btn:hover{background:var(--primary);color:#fff;border-color:var(--primary);box-shadow:0 4px 16px rgba(37,99,235,.25)}
 .feat-tab-content{display:none}
 .feat-tab-content.active{display:block}
@@ -193,8 +193,8 @@ a{text-decoration:none;color:inherit}
 }
 
 @media (max-width: 768px) {
-  .section{padding:60px 0}
-  .nav-links,.nav-actions{display:none}
+  .section{padding:50px 0}
+  .nav-links,.nav-actions{display:none !important}
   .hamburger{display:flex}
   .feat-grid-new,.pricing-grid,.test-grid{grid-template-columns:1fr}
   .fcard-new.hero-feat{grid-column:span 1}
@@ -204,11 +204,22 @@ a{text-decoration:none;color:inherit}
   .ft-btm{flex-direction:column;align-items:center;text-align:center}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .container{padding:0 16px}
-  .section{padding:50px 0}
+  .feat-tabs-nav{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    gap:8px;
+    margin:20px 0 24px;
+  }
+  .ft-btn{
+    width:100%;
+    text-align:center;
+    padding:10px 16px;
+    font-size:.85rem;
+  }
   .hero-actions{flex-direction:column;width:100%}
   .hero-actions .btn{width:100%}
   .play-btn{width:100%;justify-content:center}
-  .feat-tabs-nav{justify-content:flex-start}
 }
