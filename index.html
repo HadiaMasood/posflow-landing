@@ -23,7 +23,6 @@
           POSflow
         </a>
         <ul class="nav-links">
-          <li><a href="#demo-preview">Software Preview</a></li>
           <li><a href="#comparison">Why POSflow</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
@@ -43,7 +42,6 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mMenu">
     <ul>
-      <li><a href="#demo-preview" onclick="toggleMenu()">Software Preview</a></li>
       <li><a href="#comparison" onclick="toggleMenu()">Why POSflow</a></li>
       <li><a href="#features" onclick="toggleMenu()">Features</a></li>
       <li><a href="#pricing" onclick="toggleMenu()">Pricing</a></li>
@@ -74,9 +72,9 @@
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
               Start 14-Day Free Trial
             </a>
-            <div class="play-btn" onclick="document.getElementById('demo-preview').scrollIntoView({behavior:'smooth'})">
+            <div class="play-btn" onclick="document.getElementById('comparison').scrollIntoView({behavior:'smooth'})">
               <div class="play-ico"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#2563EB"/></svg></div>
-              See Live POS Screen
+              Learn How It Works
             </div>
           </div>
           <div class="hero-guarantee fu d4">
@@ -127,144 +125,6 @@
         <div class="li">💊 <span>PharmaCare Express</span></div>
         <div class="li">☕ <span>Artisan Cafe</span></div>
         <div class="li">🏨 <span>Grand Plaza Hotel</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INTERACTIVE SOFTWARE MOCKUP PREVIEW -->
-  <section id="demo-preview" class="section">
-    <div class="container">
-      <div class="tc fu">
-        <span class="badge">Live Interface Preview</span>
-        <h2 class="section-title" style="margin:16px auto 12px">Simple, Fast &amp; Intuitive POS Screen</h2>
-        <p class="section-sub">Experience what your cashiers and store managers will use every day. Designed for speed, minimal clicks, and zero training required.</p>
-      </div>
-
-      <div class="ui-mockup-wrapper fu d1">
-        <!-- Mockup Tab Switchers -->
-        <div class="ui-tabs">
-          <button class="ui-tab active" onclick="switchMockupTab('checkout', this)">🛒 Cashier Checkout</button>
-          <button class="ui-tab" onclick="switchMockupTab('offline-sync', this)">📡 Offline Queue Sync</button>
-          <button class="ui-tab" onclick="switchMockupTab('analytics', this)">📊 Sales &amp; Inventory</button>
-        </div>
-
-        <!-- Window Mockup Frame -->
-        <div class="window-frame">
-          <div class="window-header">
-            <div class="window-dots">
-              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-            </div>
-            <div class="window-title">POSflow Register — Terminal #01 (Station Active)</div>
-            <div class="window-status"><span class="badge-status-online" id="mockupStatusDot">● Online Mode</span></div>
-          </div>
-          
-          <div class="window-body">
-            <!-- TAB 1: CASHIER CHECKOUT -->
-            <div class="tab-content active" id="tab-checkout">
-              <div class="pos-screen-layout">
-                <div class="pos-items-grid">
-                  <div class="pos-item-card">
-                    <div class="item-img">☕</div>
-                    <div class="item-name">Espresso Coffee</div>
-                    <div class="item-price">.50</div>
-                  </div>
-                  <div class="pos-item-card">
-                    <div class="item-img">🥐</div>
-                    <div class="item-name">Butter Croissant</div>
-                    <div class="item-price">.80</div>
-                  </div>
-                  <div class="pos-item-card">
-                    <div class="item-img">🥪</div>
-                    <div class="item-name">Club Sandwich</div>
-                    <div class="item-price">.99</div>
-                  </div>
-                  <div class="pos-item-card">
-                    <div class="item-img">🥤</div>
-                    <div class="item-name">Iced Cold Brew</div>
-                    <div class="item-price">.20</div>
-                  </div>
-                  <div class="pos-item-card">
-                    <div class="item-img">🥗</div>
-                    <div class="item-name">Greek Caesar Salad</div>
-                    <div class="item-price">.50</div>
-                  </div>
-                  <div class="pos-item-card">
-                    <div class="item-img">🍰</div>
-                    <div class="item-name">Cheesecake Slice</div>
-                    <div class="item-price">.00</div>
-                  </div>
-                </div>
-                
-                <div class="pos-cart-sidebar">
-                  <div class="cart-header">Current Order #1042</div>
-                  <div class="cart-list">
-                    <div class="cart-row"><span>2x Espresso Coffee</span><strong>.00</strong></div>
-                    <div class="cart-row"><span>1x Butter Croissant</span><strong>.80</strong></div>
-                    <div class="cart-row"><span>1x Iced Cold Brew</span><strong>.20</strong></div>
-                  </div>
-                  <div class="cart-summary">
-                    <div class="summary-line"><span>Subtotal:</span><span>.00</span></div>
-                    <div class="summary-line"><span>Tax (8%):</span><span>.44</span></div>
-                    <div class="summary-total"><span>Total:</span><strong>.44</strong></div>
-                  </div>
-                  <div class="payment-action-box">
-                    <div class="nfc-tap-prompt">
-                      <span class="nfc-icon">📡</span>
-                      <span>Tap NFC Device / RFID Card or Insert</span>
-                    </div>
-                    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:10px" onclick="triggerCheckoutSim()">
-                      Charge .44 (Instant Tap)
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- TAB 2: OFFLINE QUEUE SYNC -->
-            <div class="tab-content" id="tab-offline-sync">
-              <div class="offline-sync-view">
-                <div class="sync-banner">
-                  <div class="sync-banner-title">📡 Network Offline Engine Active</div>
-                  <p>WiFi connection lost at 14:22 PM. All 18 local transactions are securely encrypted and cached in hardware storage. Normal sales operations continue without delay.</p>
-                </div>
-                <table class="sync-table">
-                  <thead>
-                    <tr><th>Tx ID</th><th>Time</th><th>Method</th><th>Amount</th><th>Local Security Status</th></tr>
-                  </thead>
-                  <tbody>
-                    <tr><td>#TX-8821</td><td>14:23 PM</td><td>NFC Tap (Phone)</td><td>.50</td><td><span class="tag-encrypted">Encrypted &amp; Queued</span></td></tr>
-                    <tr><td>#TX-8822</td><td>14:25 PM</td><td>RFID Badge #042</td><td>.00</td><td><span class="tag-encrypted">Encrypted &amp; Queued</span></td></tr>
-                    <tr><td>#TX-8823</td><td>14:28 PM</td><td>Chip &amp; PIN Insert</td><td>.90</td><td><span class="tag-encrypted">Encrypted &amp; Queued</span></td></tr>
-                    <tr><td>#TX-8824</td><td>14:31 PM</td><td>NFC Smart Watch</td><td>.50</td><td><span class="tag-encrypted">Encrypted &amp; Queued</span></td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <!-- TAB 3: ANALYTICS -->
-            <div class="tab-content" id="tab-analytics">
-              <div class="analytics-view">
-                <div class="analytics-cards">
-                  <div class="acard"><span>Today's Total Revenue</span><strong>,289.50</strong><small>+18.4% vs yesterday</small></div>
-                  <div class="acard"><span>Total Transactions</span><strong>342 Sales</strong><small>Avg .54 / ticket</small></div>
-                  <div class="acard"><span>Offline Tap Ratio</span><strong>42.5% NFC</strong><small>Zero failed checkouts</small></div>
-                </div>
-                <div class="analytics-chart-box">
-                  <div class="chart-header">Real-Time Hourly Sales Curve</div>
-                  <div class="fake-bar-chart">
-                    <div class="bar" style="height:35%" title="9 AM: "></div>
-                    <div class="bar" style="height:55%" title="10 AM: "></div>
-                    <div class="bar" style="height:85%" title="11 AM: "></div>
-                    <div class="bar" style="height:100%" title="12 PM: ,240"></div>
-                    <div class="bar" style="height:70%" title="1 PM: "></div>
-                    <div class="bar" style="height:60%" title="2 PM: "></div>
-                    <div class="bar" style="height:90%" title="3 PM: "></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -546,7 +406,6 @@
         <div class="ft-col">
           <h4>Solution</h4>
           <ul>
-            <li><a href="#demo-preview">Software Preview</a></li>
             <li><a href="#comparison">POSflow vs Competitors</a></li>
             <li><a href="#features">Offline NFC Technology</a></li>
             <li><a href="#pricing">Pricing Plans</a></li>
