@@ -90,34 +90,22 @@ function switchFeatureGroup(groupId, btn) {
 }
 
 // ─── VIDEO MODAL ──────────────────────────────────────────────────
-// ─────────────────────────────────────────────────────────────────
-// ⚠️  VIDEO URL — Update this with your actual YouTube video ID
-// Steps:
-//   1. Upload your demo video to YouTube
-//   2. Copy the video ID from the URL (e.g., youtube.com/watch?v=ABC123)
-//   3. Replace YOUR_VIDEO_ID below with that ID
-// ─────────────────────────────────────────────────────────────────
-const DEMO_VIDEO_URL = 'https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0&modestbranding=1';
-
 function openVideoModal() {
   const modal = document.getElementById('videoModal');
-  const frame = document.getElementById('videoFrame');
-  frame.src = DEMO_VIDEO_URL;
+  const video = document.getElementById('demoVideo');
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
+  if (video) { video.currentTime = 0; video.play(); }
 }
 
 function closeVideoModal(event) {
-  // Close if clicked on backdrop or close button (not inner content)
   if (event && event.target !== document.getElementById('videoModal') && event.type !== 'click') return;
   if (event && event.currentTarget === document.getElementById('videoModal') && event.target !== event.currentTarget) return;
-  
   const modal = document.getElementById('videoModal');
-  const frame = document.getElementById('videoFrame');
+  const video = document.getElementById('demoVideo');
   modal.classList.remove('open');
   document.body.style.overflow = '';
-  // Stop video by clearing src
-  setTimeout(() => { frame.src = ''; }, 300);
+  if (video) video.pause();
 }
 
 // Close modal on ESC key
