@@ -97,7 +97,7 @@ function switchFeatureGroup(groupId, btn) {
 //   2. Copy the video ID from the URL (e.g., youtube.com/watch?v=ABC123)
 //   3. Replace YOUR_VIDEO_ID below with that ID
 // ─────────────────────────────────────────────────────────────────
-const DEMO_VIDEO_URL = 'https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0&modestbranding=1';
+const DEMO_VIDEO_URL = 'https://www.youtube.com/embed/zmHJoD3aINM?autoplay=1&rel=0&modestbranding=1';
 
 function openVideoModal() {
   const modal = document.getElementById('videoModal');
