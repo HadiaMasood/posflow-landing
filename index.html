@@ -1,14 +1,90 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>POSflow — Hybrid Point of Sale &amp; Offline Payment System</title>
-  <meta name="description" content="POSflow is an enterprise-grade Point of Sale platform with seamless offline NFC & RFID tap payment processing." />
+
+  <!-- ═══ PRIMARY SEO ═══════════════════════════════════════════════ -->
+  <title>POSflow — Restaurant, Retail & Multi-Branch POS Software Pakistan</title>
+  <meta name="description" content="Pakistan's #1 all-in-one POS platform. Manage your restaurant, retail store, cafe, hotel & distribution from one dashboard. Offline NFC payments, multi-branch inventory, CRM & analytics. 500+ businesses trust POSflow." />
+  <meta name="keywords" content="restaurant POS software Pakistan, retail POS system Pakistan, cafe management software, multi-branch POS, inventory management Pakistan, CRM Pakistan, offline POS, JazzCash POS, Easypaisa POS" />
+  <meta name="author" content="POSflow Inc." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://posflow.pk/" />
+
+  <!-- ═══ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ═════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://posflow.pk/" />
+  <meta property="og:title" content="POSflow — Restaurant, Retail & Multi-Branch POS Software Pakistan" />
+  <meta property="og:description" content="Manage your restaurant, retail store, cafe & sales team from one platform. POS, Inventory, CRM & Multi-Branch — all in one. Works offline. Built for Pakistan." />
+  <meta property="og:image" content="https://posflow.pk/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="POSflow" />
+  <meta property="og:locale" content="en_PK" />
+
+  <!-- ═══ TWITTER CARD ══════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@posflow_pk" />
+  <meta name="twitter:title" content="POSflow — Pakistan's #1 All-in-One Business POS" />
+  <meta name="twitter:description" content="POS, Inventory, CRM & Multi-Branch Management for restaurants, retail stores, cafes & distributors. Works offline. 500+ businesses across Pakistan." />
+  <meta name="twitter:image" content="https://posflow.pk/og-cover.jpg" />
+
+  <!-- ═══ JSON-LD STRUCTURED DATA ══════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "POSflow",
+    "description": "Pakistan's all-in-one POS, inventory, CRM and multi-branch management platform for restaurants, retail stores, cafes, hotels and distributors.",
+    "url": "https://posflow.pk",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Android, iOS, Windows, Web",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Starter",
+        "price": "4999",
+        "priceCurrency": "PKR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "billingDuration": "P1M"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Professional",
+        "price": "12999",
+        "priceCurrency": "PKR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "billingDuration": "P1M"
+        }
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "500"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "POSflow Inc.",
+      "url": "https://posflow.pk",
+      "logo": "https://posflow.pk/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "availableLanguage": ["English", "Urdu"]
+      }
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=3.0" />
+  <link rel="stylesheet" href="style.css?v=4.0" />
 </head>
 <body>
 
@@ -23,14 +99,15 @@
           POSflow
         </a>
         <ul class="nav-links">
+          <li><a href="#industry-select">Solutions</a></li>
           <li><a href="#comparison">Why POSflow</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#testimonials">Case Studies</a></li>
         </ul>
         <div class="nav-actions">
-          <a href="#pricing" class="sign-in">Sign In</a>
-          <a href="#cta" class="btn btn-primary">Start Free Trial</a>
+          <a href="https://app.posflow.pk/login" class="sign-in" target="_blank" rel="noopener">Sign In</a>
+          <a href="#cta" class="btn btn-primary" id="nav-book-btn">Book Free Demo</a>
         </div>
         <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Menu">
           <span></span><span></span><span></span>
@@ -42,13 +119,14 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mMenu">
     <ul>
+      <li><a href="#industry-select" onclick="toggleMenu()">Solutions</a></li>
       <li><a href="#comparison" onclick="toggleMenu()">Why POSflow</a></li>
       <li><a href="#features" onclick="toggleMenu()">Features</a></li>
       <li><a href="#pricing" onclick="toggleMenu()">Pricing</a></li>
       <li><a href="#testimonials" onclick="toggleMenu()">Case Studies</a></li>
     </ul>
     <div class="mmact">
-      <a href="#cta" class="btn btn-primary" onclick="toggleMenu()">Start Free Trial</a>
+      <a href="#cta" class="btn btn-primary" onclick="toggleMenu()">Book Free Demo</a>
     </div>
   </div>
 
@@ -59,37 +137,40 @@
       <div class="hero-grid">
         <div class="hero-left">
           <div class="fu" style="margin-bottom:16px">
-            <span class="badge">Hybrid Offline &amp; Online POS Architecture</span>
+            <span class="badge">Pakistan's #1 All-in-One Business OS</span>
           </div>
           <h1 class="hero-title fu d1">
-            Uninterrupted Payments. <br/><span class="grad">Zero Sales Lost.</span>
+            Manage Your Restaurant, Retail Store &amp; Sales Team<br/>
+            <span class="grad">From One Platform.</span>
           </h1>
           <p class="hero-desc fu d2">
-            Engineered for high-volume retail and dining. POSflow processes NFC tap, RFID, and card payments offline during internet outages, synchronizing automatically when connectivity restores.
+            POS, Inventory, CRM &amp; Multi-Branch Management — all in one. Stop managing operations in Excel. POSflow works offline during internet outages and syncs automatically when connectivity restores.
           </p>
           <div class="hero-actions fu d3">
-            <a href="#cta" class="btn btn-primary">
-              Start 14-Day Trial
+            <a href="#cta" class="btn btn-primary" id="hero-book-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book Free Demo
             </a>
-            <div class="play-btn" onclick="document.getElementById('comparison').scrollIntoView({behavior:'smooth'})">
+            <div class="play-btn" onclick="openVideoModal()">
               <div class="play-ico">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="#2563EB"><path d="M8 5v14l11-7z"/></svg>
               </div>
-              Platform Architecture
+              Watch 90-sec Demo
             </div>
           </div>
           <div class="hero-guarantee fu d4">
-            <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 15-Min Deployment</span>
-            <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Open Terminal Support</span>
-            <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> PCI-DSS Compliant</span>
+            <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> No Credit Card Required</span>
+            <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 14-Day Free Trial</span>
+            <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Setup in 15 Minutes</span>
           </div>
           <div class="hero-stats fu d4">
-            <div><div class="hstat-n">99.99<span class="pc">%</span></div><div class="hstat-l">Uptime SLA Guarantee</div></div>
-            <div><div class="hstat-n">0<span class="ms">ms</span></div><div class="hstat-l">Offline Queue Latency</div></div>
-            <div><div class="hstat-n">&lt;1<span class="ss">s</span></div><div class="hstat-l">Cloud Sync Velocity</div></div>
+            <div><div class="hstat-n" data-target="500" data-suffix="+">0+</div><div class="hstat-l">Businesses Powered</div></div>
+            <div><div class="hstat-n" data-target="50" data-suffix="k+">0k+</div><div class="hstat-l">Orders Processed Daily</div></div>
+            <div><div class="hstat-n" data-target="20" data-suffix="+">0+</div><div class="hstat-l">Cities Covered</div></div>
+            <div><div class="hstat-n" data-target="99.9" data-suffix="%">0%</div><div class="hstat-l">Uptime Guarantee</div></div>
           </div>
         </div>
-        
+
         <div class="hero-right fu d2">
           <div class="hero-img-wrap">
             <img src="hero-pos.jpg" alt="POSflow Enterprise Terminal Hardware" />
@@ -120,7 +201,7 @@
   <!-- LOGOS STRIP -->
   <section id="logos">
     <div class="container">
-      <p class="logos-label">Trusted by enterprise networks, multi-location retail, and venues worldwide</p>
+      <p class="logos-label">Trusted by restaurants, retail chains, cafes & distributors across Pakistan</p>
       <div class="logos-strip">
         <div class="li"><span>RETAILHUB STORES</span></div>
         <div class="li"><span>FOODCHAIN PRO</span></div>
@@ -132,49 +213,386 @@
     </div>
   </section>
 
-  <!-- WHY US / COMPARISON TABLE -->
-  <section id="comparison" class="section" style="background:#fff">
+  <!-- SOCIAL PROOF METRICS BAR -->
+  <section id="metrics-bar">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-item fu">
+          <div class="metric-number" data-target="500" data-suffix="+">500+</div>
+          <div class="metric-label">Businesses Powered</div>
+        </div>
+        <div class="metric-item fu d1">
+          <div class="metric-number" data-target="50000" data-suffix="+">50,000+</div>
+          <div class="metric-label">Orders Processed Daily</div>
+        </div>
+        <div class="metric-item fu d2">
+          <div class="metric-number" data-target="99.9" data-suffix="%">99.9%</div>
+          <div class="metric-label">Platform Uptime</div>
+        </div>
+        <div class="metric-item fu d3">
+          <div class="metric-number" data-target="20" data-suffix="+">20+</div>
+          <div class="metric-label">Cities Covered</div>
+        </div>
+        <div class="metric-item fu d4">
+          <div class="metric-number" data-target="15" data-suffix=" min">15 min</div>
+          <div class="metric-label">Average Setup Time</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY SEGMENTATION -->
+  <section id="industry-select" class="section">
     <div class="container">
       <div class="tc fu">
-        <span class="badge">Performance Comparison</span>
-        <h2 class="section-title" style="margin:16px auto 12px">POSflow vs. Legacy Point of Sale Systems</h2>
-        <p class="section-subtitle">Traditional cloud POS systems halt checkout operations during network outages. POSflow dual-engine architecture guarantees uninterrupted payment processing.</p>
+        <span class="badge">Choose Your Business</span>
+        <h2 class="section-title" style="margin:16px auto 12px">Built for Every Type of Business</h2>
+        <p class="section-sub">Select your business type to see how POSflow is tailored specifically for you.</p>
+      </div>
+
+      <div class="industry-pills fu d1">
+        <button class="industry-pill active" onclick="selectIndustry('retail', this)" id="pill-retail">
+          <span class="pill-icon">🏪</span>
+          <span class="pill-label">Retail Store</span>
+        </button>
+        <button class="industry-pill" onclick="selectIndustry('restaurant', this)" id="pill-restaurant">
+          <span class="pill-icon">🍽</span>
+          <span class="pill-label">Restaurant</span>
+        </button>
+        <button class="industry-pill" onclick="selectIndustry('cafe', this)" id="pill-cafe">
+          <span class="pill-icon">☕</span>
+          <span class="pill-label">Cafe</span>
+        </button>
+        <button class="industry-pill" onclick="selectIndustry('hotel', this)" id="pill-hotel">
+          <span class="pill-icon">🏨</span>
+          <span class="pill-label">Hotel</span>
+        </button>
+        <button class="industry-pill" onclick="selectIndustry('distribution', this)" id="pill-distribution">
+          <span class="pill-icon">🚚</span>
+          <span class="pill-label">Distribution</span>
+        </button>
+      </div>
+
+      <div class="industry-panels">
+        <!-- RETAIL -->
+        <div class="industry-panel active" id="panel-retail">
+          <div class="ipanel-grid">
+            <div class="ipanel-text fu d1">
+              <h3>Retail Store POS</h3>
+              <p>Everything you need to run a modern retail operation — from a single outlet to a nationwide chain.</p>
+              <ul class="ipanel-list">
+                <li><span class="check-sm">✓</span> Fast barcode scanning & receipt printing</li>
+                <li><span class="check-sm">✓</span> Real-time stock deduction at checkout</li>
+                <li><span class="check-sm">✓</span> Multi-branch inventory sync</li>
+                <li><span class="check-sm">✓</span> Cashier-level role permissions</li>
+                <li><span class="check-sm">✓</span> Daily sales & profit reports</li>
+                <li><span class="check-sm">✓</span> Offline checkout during internet cuts</li>
+              </ul>
+              <a href="#cta" class="btn btn-primary" style="margin-top:8px">Get Retail Demo</a>
+            </div>
+            <div class="ipanel-mockup fu d2">
+              <div class="mockup-browser">
+                <div class="mockup-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span class="mockup-url">posflow.app/retail/pos</span></div>
+                <div class="mockup-body retail-mock">
+                  <div class="mock-header"><span>🏪 POSflow Retail</span><span class="mock-status online">● Live</span></div>
+                  <div class="mock-cart">
+                    <div class="mock-item"><span>Samsung TV 55"</span><span>PKR 89,000</span></div>
+                    <div class="mock-item"><span>HDMI Cable x2</span><span>PKR 1,200</span></div>
+                    <div class="mock-item"><span>Wall Mount Kit</span><span>PKR 3,500</span></div>
+                    <div class="mock-divider"></div>
+                    <div class="mock-item total"><span>Total</span><span>PKR 93,700</span></div>
+                  </div>
+                  <div class="mock-btns">
+                    <div class="mock-btn blue">💳 Card</div>
+                    <div class="mock-btn green">📱 NFC Tap</div>
+                    <div class="mock-btn grey">💵 Cash</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESTAURANT -->
+        <div class="industry-panel" id="panel-restaurant">
+          <div class="ipanel-grid">
+            <div class="ipanel-text fu d1">
+              <h3>Restaurant Management OS</h3>
+              <p>Table management, kitchen display, recipe costing, and delivery integrations — built for restaurants.</p>
+              <ul class="ipanel-list">
+                <li><span class="check-sm">✓</span> Table & dine-in order management</li>
+                <li><span class="check-sm">✓</span> Kitchen Display System (KDS)</li>
+                <li><span class="check-sm">✓</span> Recipe & ingredient costing</li>
+                <li><span class="check-sm">✓</span> Waiter app (tablet/phone)</li>
+                <li><span class="check-sm">✓</span> Foodpanda & Careem Now integration</li>
+                <li><span class="check-sm">✓</span> End-of-day sales & food cost report</li>
+              </ul>
+              <a href="#cta" class="btn btn-primary" style="margin-top:8px">Get Restaurant Demo</a>
+            </div>
+            <div class="ipanel-mockup fu d2">
+              <div class="mockup-browser">
+                <div class="mockup-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span class="mockup-url">posflow.app/restaurant/kds</span></div>
+                <div class="mockup-body restaurant-mock">
+                  <div class="mock-header"><span>🍽 Kitchen Display</span><span class="mock-status orange">● 3 Active Orders</span></div>
+                  <div class="kds-grid">
+                    <div class="kds-ticket new"><div class="kds-table">Table 4</div><div class="kds-item">Chicken Biryani x2</div><div class="kds-item">Seekh Kebab x1</div><div class="kds-time">2 min ago</div></div>
+                    <div class="kds-ticket cooking"><div class="kds-table">Table 7</div><div class="kds-item">Mutton Karahi x1</div><div class="kds-item">Naan x4</div><div class="kds-time">8 min ago</div></div>
+                    <div class="kds-ticket ready"><div class="kds-table">Table 2</div><div class="kds-item">Zinger Burger x2</div><div class="kds-item">Fries x2</div><div class="kds-time">✓ Ready</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAFE -->
+        <div class="industry-panel" id="panel-cafe">
+          <div class="ipanel-grid">
+            <div class="ipanel-text fu d1">
+              <h3>Cafe & Coffee Shop POS</h3>
+              <p>Speedy order-taking, loyalty rewards, and ingredient tracking — perfect for high-traffic cafes.</p>
+              <ul class="ipanel-list">
+                <li><span class="check-sm">✓</span> Quick-order button layout</li>
+                <li><span class="check-sm">✓</span> Customer loyalty & rewards program</li>
+                <li><span class="check-sm">✓</span> Modifier support (milk, sugar, extras)</li>
+                <li><span class="check-sm">✓</span> Ingredient-level inventory tracking</li>
+                <li><span class="check-sm">✓</span> Digital receipts via WhatsApp/SMS</li>
+                <li><span class="check-sm">✓</span> Shift-end cash management</li>
+              </ul>
+              <a href="#cta" class="btn btn-primary" style="margin-top:8px">Get Cafe Demo</a>
+            </div>
+            <div class="ipanel-mockup fu d2">
+              <div class="mockup-browser">
+                <div class="mockup-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span class="mockup-url">posflow.app/cafe/pos</span></div>
+                <div class="mockup-body cafe-mock">
+                  <div class="mock-header"><span>☕ Cafe POS</span><span class="mock-status green">● Online</span></div>
+                  <div class="cafe-menu-grid">
+                    <div class="cafe-item active">Americano<br/><small>PKR 350</small></div>
+                    <div class="cafe-item">Latte<br/><small>PKR 420</small></div>
+                    <div class="cafe-item">Cappuccino<br/><small>PKR 450</small></div>
+                    <div class="cafe-item">Cold Brew<br/><small>PKR 520</small></div>
+                    <div class="cafe-item">Croissant<br/><small>PKR 280</small></div>
+                    <div class="cafe-item">Brownie<br/><small>PKR 320</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOTEL -->
+        <div class="industry-panel" id="panel-hotel">
+          <div class="ipanel-grid">
+            <div class="ipanel-text fu d1">
+              <h3>Hotel & Hospitality POS</h3>
+              <p>Room billing, restaurant charges, and front-desk POS — unified across your entire property.</p>
+              <ul class="ipanel-list">
+                <li><span class="check-sm">✓</span> Room-charge posting from restaurant</li>
+                <li><span class="check-sm">✓</span> Multiple outlet management (restaurant, bar, spa)</li>
+                <li><span class="check-sm">✓</span> Guest loyalty & discount programs</li>
+                <li><span class="check-sm">✓</span> Multi-currency billing support</li>
+                <li><span class="check-sm">✓</span> Night audit & revenue reports</li>
+                <li><span class="check-sm">✓</span> PMS integration ready</li>
+              </ul>
+              <a href="#cta" class="btn btn-primary" style="margin-top:8px">Get Hotel Demo</a>
+            </div>
+            <div class="ipanel-mockup fu d2">
+              <div class="mockup-browser">
+                <div class="mockup-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span class="mockup-url">posflow.app/hotel/dashboard</span></div>
+                <div class="mockup-body hotel-mock">
+                  <div class="mock-header"><span>🏨 Hotel Dashboard</span><span class="mock-status green">● Live</span></div>
+                  <div class="hotel-stats">
+                    <div class="hotel-stat"><div class="hs-n">24</div><div class="hs-l">Rooms Occupied</div></div>
+                    <div class="hotel-stat"><div class="hs-n">PKR 182k</div><div class="hs-l">Today's Revenue</div></div>
+                    <div class="hotel-stat"><div class="hs-n">6</div><div class="hs-l">Open Bills</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DISTRIBUTION -->
+        <div class="industry-panel" id="panel-distribution">
+          <div class="ipanel-grid">
+            <div class="ipanel-text fu d1">
+              <h3>Distribution & Wholesale</h3>
+              <p>Field sales, van-selling, order management, and distributor tracking — all in real-time.</p>
+              <ul class="ipanel-list">
+                <li><span class="check-sm">✓</span> Mobile salesperson app (offline-first)</li>
+                <li><span class="check-sm">✓</span> Route planning & visit tracking</li>
+                <li><span class="check-sm">✓</span> Van inventory & load management</li>
+                <li><span class="check-sm">✓</span> Credit limit & outstanding tracking</li>
+                <li><span class="check-sm">✓</span> Order vs. delivery reconciliation</li>
+                <li><span class="check-sm">✓</span> Beat-wise performance reports</li>
+              </ul>
+              <a href="#cta" class="btn btn-primary" style="margin-top:8px">Get Distribution Demo</a>
+            </div>
+            <div class="ipanel-mockup fu d2">
+              <div class="mockup-browser">
+                <div class="mockup-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span class="mockup-url">posflow.app/distribution/routes</span></div>
+                <div class="mockup-body dist-mock">
+                  <div class="mock-header"><span>🚚 Field Sales</span><span class="mock-status blue">● 8 Reps Active</span></div>
+                  <div class="dist-list">
+                    <div class="dist-rep"><span>Ahmed (Route A)</span><span class="dist-badge done">12 orders</span></div>
+                    <div class="dist-rep"><span>Bilal (Route B)</span><span class="dist-badge warn">7 orders</span></div>
+                    <div class="dist-rep"><span>Usman (Route C)</span><span class="dist-badge done">15 orders</span></div>
+                    <div class="dist-rep"><span>Sara (Route D)</span><span class="dist-badge warn">4 orders</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO DEMO SECTION -->
+  <section id="video-demo" class="section" style="background:#fff">
+    <div class="container">
+      <div class="tc fu">
+        <span class="badge">Product Demo</span>
+        <h2 class="section-title" style="margin:16px auto 12px">See POSflow in Action</h2>
+        <p class="section-sub">Watch how businesses set up and run their entire operation in under 15 minutes.</p>
+      </div>
+      <div class="video-thumb-wrap fu d1" onclick="openVideoModal()">
+        <div class="video-overlay">
+          <div class="big-play-btn">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <div class="video-caption">Watch 90-Second Product Demo</div>
+        </div>
+        <div class="video-thumb-screen">
+          <div class="vt-header">
+            <div class="vt-dots"><span></span><span></span><span></span></div>
+            <div class="vt-title">POSflow — Live Dashboard</div>
+          </div>
+          <div class="vt-body">
+            <div class="vt-sidebar">
+              <div class="vt-nav-item active">📊 Dashboard</div>
+              <div class="vt-nav-item">🛒 POS Terminal</div>
+              <div class="vt-nav-item">📦 Inventory</div>
+              <div class="vt-nav-item">👥 CRM</div>
+              <div class="vt-nav-item">📈 Analytics</div>
+            </div>
+            <div class="vt-main">
+              <div class="vt-stats-row">
+                <div class="vt-stat-card"><div class="vt-sn">PKR 284k</div><div class="vt-sl">Today's Sales</div><div class="vt-sg">↑ 18%</div></div>
+                <div class="vt-stat-card"><div class="vt-sn">347</div><div class="vt-sl">Orders Today</div><div class="vt-sg">↑ 12%</div></div>
+                <div class="vt-stat-card"><div class="vt-sn">94%</div><div class="vt-sl">Stock Health</div><div class="vt-sg">Good</div></div>
+              </div>
+              <div class="vt-chart">
+                <div class="vt-bar" style="height:55%"></div>
+                <div class="vt-bar" style="height:72%"></div>
+                <div class="vt-bar" style="height:48%"></div>
+                <div class="vt-bar" style="height:85%"></div>
+                <div class="vt-bar" style="height:65%"></div>
+                <div class="vt-bar highlight" style="height:91%"></div>
+                <div class="vt-bar" style="height:78%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal" onclick="closeVideoModal(event)">
+    <div class="video-modal-inner">
+      <button class="video-close" onclick="closeVideoModal()">✕</button>
+      <div class="video-container">
+        <iframe id="videoFrame" src="" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="POSflow Product Demo"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY US / COMPARISON TABLE (EXPANDED) -->
+  <section id="comparison" class="section" style="background:var(--bg)">
+    <div class="container">
+      <div class="tc fu">
+        <span class="badge">Competitive Analysis</span>
+        <h2 class="section-title" style="margin:16px auto 12px">Why Businesses Choose POSflow</h2>
+        <p class="section-subtitle">See how POSflow compares against global and local alternatives.</p>
       </div>
 
       <div class="comparison-table-wrap fu d1">
         <table class="comparison-table">
           <thead>
             <tr>
-              <th>Capability</th>
-              <th class="col-posflow">POSflow Enterprise</th>
-              <th class="col-legacy">Legacy Cloud POS</th>
+              <th>Feature</th>
+              <th class="col-posflow">POSflow</th>
+              <th class="col-legacy">Foodics</th>
+              <th class="col-legacy">Toast</th>
+              <th class="col-legacy">Square</th>
+              <th class="col-legacy">Local POS</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Offline Processing Capability</strong></td>
-              <td class="col-posflow"><span class="check-icon">✓</span> 100% Operational (NFC, RFID &amp; Chip)</td>
-              <td class="col-legacy"><span class="x-icon">✕</span> Freezes / Declines Transactions</td>
+              <td><strong>Multi-Branch Management</strong></td>
+              <td class="col-posflow"><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="warn-icon">!</span> Limited</td>
+              <td><span class="x-icon">✕</span></td>
             </tr>
             <tr>
-              <td><strong>Transaction Speed</strong></td>
-              <td class="col-posflow"><span class="check-icon">✓</span> Sub-second processing (&lt;1s)</td>
-              <td class="col-legacy"><span class="warn-icon">!</span> 4 to 8 Seconds (Network Dependent)</td>
+              <td><strong>Local Support (Pakistan)</strong></td>
+              <td class="col-posflow"><span class="check-icon">✓</span> Urdu + English</td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="x-icon">✕</span> US Only</td>
+              <td><span class="x-icon">✕</span> US Only</td>
+              <td><span class="warn-icon">!</span> Varies</td>
             </tr>
             <tr>
-              <td><strong>Hardware Terminal Compatibility</strong></td>
-              <td class="col-posflow"><span class="check-icon">✓</span> Open Hardware (Android, iOS, PC, Tablets)</td>
-              <td class="col-legacy"><span class="x-icon">✕</span> Proprietary Hardware Lock-in</td>
+              <td><strong>Custom Development</strong></td>
+              <td class="col-posflow"><span class="check-icon">✓</span> Included</td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="warn-icon">!</span> Extra cost</td>
             </tr>
             <tr>
-              <td><strong>Data Sync &amp; Queue Management</strong></td>
-              <td class="col-posflow"><span class="check-icon">✓</span> Automated background sync upon reconnect</td>
-              <td class="col-legacy"><span class="warn-icon">!</span> Manual reconciliation required</td>
+              <td><strong>Offline Mode</strong></td>
+              <td class="col-posflow"><span class="check-icon">✓</span> Full NFC/RFID</td>
+              <td><span class="warn-icon">!</span> Partial</td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="warn-icon">!</span> Basic</td>
             </tr>
             <tr>
-              <td><strong>Enterprise ERP &amp; Accounting Sync</strong></td>
-              <td class="col-posflow"><span class="check-icon">✓</span> Direct QuickBooks, Xero &amp; API Integration</td>
-              <td class="col-legacy"><span class="x-icon">✕</span> Third-party paid plugins required</td>
+              <td><strong>Pakistan Payment Gateways</strong></td>
+              <td class="col-posflow"><span class="check-icon">✓</span> JazzCash, Easypaisa, HBL</td>
+              <td><span class="warn-icon">!</span> Limited</td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="warn-icon">!</span> Some</td>
+            </tr>
+            <tr>
+              <td><strong>Restaurant + Retail in One</strong></td>
+              <td class="col-posflow"><span class="check-icon">✓</span></td>
+              <td><span class="x-icon">✕</span> Restaurant only</td>
+              <td><span class="x-icon">✕</span> Restaurant only</td>
+              <td><span class="warn-icon">!</span> Basic</td>
+              <td><span class="x-icon">✕</span></td>
+            </tr>
+            <tr>
+              <td><strong>Built-in CRM & Sales Team</strong></td>
+              <td class="col-posflow"><span class="check-icon">✓</span></td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="x-icon">✕</span></td>
+              <td><span class="warn-icon">!</span> Basic</td>
+              <td><span class="x-icon">✕</span></td>
+            </tr>
+            <tr>
+              <td><strong>Pricing</strong></td>
+              <td class="col-posflow"><span class="check-icon">✓</span> PKR-based, affordable</td>
+              <td>USD-only, expensive</td>
+              <td>USD-only, US market</td>
+              <td>USD-only, % per txn</td>
+              <td>One-time, no updates</td>
             </tr>
           </tbody>
         </table>
@@ -182,7 +600,7 @@
     </div>
   </section>
 
-  <!-- FEATURES SECTION (TABBED & PROFESSIONAL ICONS) -->
+  <!-- FEATURES SECTION (TABBED) -->
   <section id="features" class="section">
     <div class="container">
       <div class="tc fu">
@@ -204,14 +622,14 @@
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
             </div>
             <h3>NFC &amp; RFID Offline Payment Engine</h3>
-            <p>Our core innovation. Accept contactless smartphone taps (Apple Pay, Google Pay) and RFID cards even during total internet disconnects. Transactions are encrypted locally and safely queued in hardware memory.</p>
+            <p>Our core innovation. Accept contactless smartphone taps (Apple Pay, Google Pay, JazzCash) and RFID cards even during total internet disconnects. Transactions are encrypted locally and safely queued in hardware memory.</p>
           </div>
           <div class="fcard-new">
             <div class="ficon-svg">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
             </div>
-            <h3>Unified Payment Gateways</h3>
-            <p>Pre-integrated support for Stripe, PayPal, Square, and ACH direct bank transfers. Process transactions with competitive transparent rates.</p>
+            <h3>Pakistan Payment Gateways</h3>
+            <p>Pre-integrated with JazzCash, Easypaisa, HBL, Meezan Pay, and international gateways. Process transactions at competitive transparent rates.</p>
           </div>
           <div class="fcard-new">
             <div class="ficon-svg">
@@ -239,12 +657,12 @@
             <h3>Role-Based Staff Management</h3>
             <p>Granular authorization controls for cashiers, store supervisors, and finance teams with complete action audit logging.</p>
           </div>
-          <div class="fcard-new">
+          <div class="fcard-new hero-feat">
             <div class="ficon-svg">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
-            <h3>Multi-Location Management</h3>
-            <p>Centralized administration for physical retail stores, pop-up kiosks, and event registers from a single management console.</p>
+            <h3>Multi-Branch &amp; Multi-Location Management</h3>
+            <p>Centralized administration for all physical stores, delivery kitchens, pop-up kiosks, and event registers from a single management console. Real-time inter-branch stock transfers and consolidated P&amp;L.</p>
           </div>
         </div>
       </div>
@@ -269,16 +687,51 @@
             <div class="ficon-svg">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h3>24/7 Enterprise SLA Support</h3>
-            <p>Dedicated technical support engineering and priority direct phone routing to ensure zero store downtime during peak hours.</p>
+            <h3>24/7 Local Support Team</h3>
+            <p>Dedicated Urdu + English technical support, priority direct phone routing, and on-site setup assistance across Pakistan.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRICING SECTION -->
-  <section id="pricing" class="section" style="background:#fff">
+  <!-- PRICING PREVIEW STRIP -->
+  <section id="pricing-preview" class="section" style="background:#fff">
+    <div class="container">
+      <div class="tc fu">
+        <span class="badge">Simple, Transparent Pricing</span>
+        <h2 class="section-title" style="margin:16px auto 12px">Plans That Grow With Your Business</h2>
+        <p class="section-sub">14-day free trial on all plans. No credit card required. Cancel anytime.</p>
+      </div>
+      <div class="pricing-preview-cards fu d1">
+        <div class="ppc" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
+          <div class="ppc-icon">🏪</div>
+          <div class="ppc-plan">Starter</div>
+          <div class="ppc-price">PKR 4,999<span>/mo</span></div>
+          <div class="ppc-desc">1 branch · Up to 3 terminals</div>
+          <div class="ppc-cta">See Details →</div>
+        </div>
+        <div class="ppc popular-ppc" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
+          <div class="ppc-popular-tag">Most Popular</div>
+          <div class="ppc-icon">🚀</div>
+          <div class="ppc-plan">Professional</div>
+          <div class="ppc-price">PKR 12,999<span>/mo</span></div>
+          <div class="ppc-desc">Multi-branch · Unlimited terminals</div>
+          <div class="ppc-cta">See Details →</div>
+        </div>
+        <div class="ppc" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
+          <div class="ppc-icon">🏢</div>
+          <div class="ppc-plan">Enterprise</div>
+          <div class="ppc-price">Custom<span> pricing</span></div>
+          <div class="ppc-desc">Chains · Custom development</div>
+          <div class="ppc-cta">Contact Sales →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL PRICING SECTION -->
+  <section id="pricing" class="section" style="background:var(--bg)">
     <div class="container">
       <div class="tc fu">
         <span class="badge">Transparent Enterprise Pricing</span>
@@ -291,12 +744,12 @@
           <div class="p-header">
             <h3>Starter</h3>
             <p>Designed for single-location outlets, small cafes, and pop-up stores.</p>
-            <div class="p-price"><strong></strong><span>/ month</span></div>
+            <div class="p-price"><strong>PKR 4,999</strong><span>/ month</span></div>
           </div>
           <ul class="p-list">
-            <li><span class="check-sm">✓</span> 1 Register Terminal License</li>
+            <li><span class="check-sm">✓</span> Up to 3 Terminal Licenses</li>
             <li><span class="check-sm">✓</span> Offline NFC &amp; RFID Processing</li>
-            <li><span class="check-sm">✓</span> Up to 1,000 Monthly Transactions</li>
+            <li><span class="check-sm">✓</span> Up to 5,000 Monthly Transactions</li>
             <li><span class="check-sm">✓</span> Real-Time Stock Tracking</li>
             <li><span class="check-sm">✓</span> Standard Technical Support</li>
           </ul>
@@ -307,15 +760,15 @@
           <div class="popular-badge">Recommended Plan</div>
           <div class="p-header">
             <h3>Professional</h3>
-            <p>For high-volume retail stores and multi-register locations.</p>
-            <div class="p-price"><strong></strong><span>/ month</span></div>
+            <p>For high-volume retail stores, restaurants &amp; multi-location businesses.</p>
+            <div class="p-price"><strong>PKR 12,999</strong><span>/ month</span></div>
           </div>
           <ul class="p-list">
-            <li><span class="check-sm">✓</span> Up to 5 Register Terminal Licenses</li>
-            <li><span class="check-sm">✓</span> Unlimited Offline NFC/RFID Processing</li>
+            <li><span class="check-sm">✓</span> Unlimited Terminal Licenses</li>
+            <li><span class="check-sm">✓</span> Unlimited NFC/RFID Processing</li>
             <li><span class="check-sm">✓</span> Unlimited Monthly Transactions</li>
-            <li><span class="check-sm">✓</span> QuickBooks &amp; Xero Direct Sync</li>
-            <li><span class="check-sm">✓</span> Multi-Staff Audit Logging</li>
+            <li><span class="check-sm">✓</span> Multi-Branch Management</li>
+            <li><span class="check-sm">✓</span> Built-in CRM &amp; Sales Team Module</li>
             <li><span class="check-sm">✓</span> 24/7 Priority Phone &amp; Chat Support</li>
           </ul>
           <a href="#cta" class="btn btn-primary" style="width:100%;justify-content:center">Start Free Trial</a>
@@ -324,7 +777,7 @@
         <div class="pricing-card">
           <div class="p-header">
             <h3>Enterprise</h3>
-            <p>Tailored architecture for multi-location retail chains &amp; venue networks.</p>
+            <p>Tailored architecture for multi-location retail chains &amp; franchise networks.</p>
             <div class="p-price"><strong>Custom</strong></div>
           </div>
           <ul class="p-list">
@@ -345,8 +798,8 @@
     <div class="container">
       <div class="tc fu">
         <span class="badge">Merchant Case Studies</span>
-        <h2 class="section-title" style="margin:16px auto 12px">Trusted by Store Managers Worldwide</h2>
-        <p class="section-sub">Discover how POSflow protects business revenue during unexpected network disruptions.</p>
+        <h2 class="section-title" style="margin:16px auto 12px">Trusted by Store Managers Across Pakistan</h2>
+        <p class="section-sub">Discover how POSflow helps businesses save time, reduce losses, and scale faster.</p>
       </div>
 
       <div class="test-grid">
@@ -357,31 +810,31 @@
             <div class="tav" style="background:linear-gradient(135deg,#2563EB,#6366F1)">A</div>
             <div>
               <div class="tn">Ahmad Hassan</div>
-              <div class="tr">Founder, FreshMarket Outlets</div>
+              <div class="tr">Founder, FreshMarket Outlets — Lahore</div>
             </div>
           </div>
         </div>
 
         <div class="tc-card fu d2">
           <div class="tstars">★★★★★</div>
-          <p class="tt">"Automated daily QuickBooks synchronization eliminated hours of manual bookkeeping. Deploying POSflow on our existing tablets took less than 15 minutes."</p>
+          <p class="tt">"Automated daily QuickBooks synchronization eliminated hours of manual bookkeeping. Deploying POSflow on our existing tablets took less than 15 minutes per branch."</p>
           <div class="ta">
             <div class="tav" style="background:linear-gradient(135deg,#10B981,#059669)">S</div>
             <div>
               <div class="tn">Sara Malik</div>
-              <div class="tr">General Manager, Artisan Cafe Group</div>
+              <div class="tr">General Manager, Artisan Cafe Group — Karachi</div>
             </div>
           </div>
         </div>
 
         <div class="tc-card fu d3">
           <div class="tstars">★★★★★</div>
-          <p class="tt">"Payment gateway integrations worked immediately out of the box. We connected Stripe and began processing contactless payments on day one with zero delay."</p>
+          <p class="tt">"We manage 8 restaurant branches from one dashboard. Stock transfers, consolidated reports, and kitchen displays — POSflow replaced 4 different software tools we were using."</p>
           <div class="ta">
             <div class="tav" style="background:linear-gradient(135deg,#8B5CF6,#6366F1)">R</div>
             <div>
               <div class="tn">Raza Qureshi</div>
-              <div class="tr">Director of Operations, EventZone Outlets</div>
+              <div class="tr">Director of Operations, EventZone Outlets — Islamabad</div>
             </div>
           </div>
         </div>
@@ -395,18 +848,21 @@
     <div class="container">
       <div class="cta-inner">
         <span class="badge cta-badge" style="margin-bottom:20px">Deploy POSflow Today</span>
-        <h2 class="cta-title">Modernize Your Point of Sale Operations</h2>
-        <p class="cta-desc">Set up your register in 15 minutes. Start accepting offline NFC tap payments and unified online transactions seamlessly.</p>
-        
+        <h2 class="cta-title">Ready to Stop Managing in Excel?</h2>
+        <p class="cta-desc">Book a free 30-minute demo. Our team will walk you through the setup for your exact business type — restaurant, retail, cafe, or distribution.</p>
+
         <form class="cta-form" onsubmit="handleSubmit(event)">
-          <input type="email" id="cta-email" placeholder="Enter your work email" required />
-          <button type="submit" class="btn btn-primary" id="book-btn">Get Started</button>
+          <input type="email" id="cta-email" placeholder="Enter your work email" required autocomplete="email" />
+          <button type="submit" class="btn btn-primary" id="book-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Free Demo
+          </button>
         </form>
-        
+
         <div class="cta-g">
           <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 14-Day Free Evaluation</span>
           <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> No Credit Card Required</span>
-          <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Open Hardware Support</span>
+          <span class="feat-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Setup in 15 Minutes</span>
         </div>
       </div>
     </div>
@@ -423,23 +879,24 @@
             </div>
             POSflow
           </div>
-          <p>Enterprise Point of Sale architecture designed for high availability, sub-second checkout, and offline transaction processing.</p>
+          <p>Pakistan's all-in-one business platform for restaurants, retail stores, cafes, hotels, and distributors — with offline-first reliability.</p>
+        </div>
+        <div class="ft-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#industry-select">Restaurant POS</a></li>
+            <li><a href="#industry-select">Retail Store POS</a></li>
+            <li><a href="#industry-select">Cafe Management</a></li>
+            <li><a href="#industry-select">Distribution &amp; Sales</a></li>
+          </ul>
         </div>
         <div class="ft-col">
           <h4>Platform</h4>
           <ul>
-            <li><a href="#comparison">POSflow vs Legacy POS</a></li>
+            <li><a href="#comparison">Why POSflow</a></li>
             <li><a href="#features">Offline Payment Engine</a></li>
             <li><a href="#pricing">Subscription Pricing</a></li>
-          </ul>
-        </div>
-        <div class="ft-col">
-          <h4>Integrations</h4>
-          <ul>
-            <li><a href="#">Stripe &amp; PayPal Gateways</a></li>
-            <li><a href="#">QuickBooks Online Sync</a></li>
-            <li><a href="#">Xero Accounting API</a></li>
-            <li><a href="#">Direct Bank Transfers</a></li>
+            <li><a href="#video-demo">Watch Demo</a></li>
           </ul>
         </div>
         <div class="ft-col">
@@ -448,19 +905,25 @@
             <li><a href="#">About POSflow</a></li>
             <li><a href="#">Security &amp; Compliance</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Support Documentation</a></li>
+            <li><a href="#">Support &amp; Docs</a></li>
           </ul>
         </div>
       </div>
       <div class="ft-btm">
-        <span>© 2026 POSflow Inc. All rights reserved.</span>
+        <span>© 2026 POSflow Inc. All rights reserved. Made in Pakistan 🇵🇰</span>
         <div class="ft-soc">
-          <div class="sb">X</div><div class="sb">in</div><div class="sb">GH</div>
+          <div class="sb">X</div><div class="sb">in</div><div class="sb">WA</div>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="app.js?v=3.0"></script>
+  <!-- STICKY BOOK DEMO BUTTON -->
+  <div class="sticky-demo-btn" id="stickyBtn" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    Book Demo
+  </div>
+
+  <script src="app.js?v=4.0"></script>
 </body>
 </html>
